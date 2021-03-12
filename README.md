@@ -1,3 +1,3 @@
-# Estudo versionado 001
+# Estudos_HTML5_CSS3
 
- meu primeiro projeto versionado
+Primeiros passos no desenvolvimento Web
