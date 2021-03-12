@@ -1,3 +1,2 @@
-# Estudos_PESSOAIS
-
+# Estudos_pessoais
 Apenas postagem de alguns exercícios
