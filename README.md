@@ -1,3 +1,3 @@
-# Estudos_HTML5_CSS3
+# Estudos_PESSOAIS
 
-Primeiros passos no desenvolvimento Web
+Apenas postagem de alguns exercícios
