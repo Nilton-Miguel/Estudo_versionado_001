@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Revisão</title>
+    </head>
+
+    <body>
+
+        <h2>
+            Bons lugares para estudar HTML:
+            <br><a href="https://www.w3schools.com/">W3Schools</a>
+            <br><a href="https://youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Curso em Vídeo</a>
+        </h2>
+        <hr>
+        <h1>
+            Esqueleto
+        </h1>
+        <!-- Essa é a tag usada para fazer comentários no html -->
+            <h2>
+                A estrutura básica de um documento HTML (o esqueleto) pode ser gerada no VSCode apenas digitando "!" e dando 
+                autocomplete. Ela consiste de um head, onde são feitas as configurações iniciais, e um body, onde
+                efetivamente escrevemos o documento.
+                <br>
+                HTML não é uma linguagem de programação, é uma linguagem de marcação. Seu 
+                nome pode ser entendido como Linguagem de Marcação de Hipertexto, criada na popularização da Internet como 
+                principal meio de criar uma rede de páginas interconectadas por Hipertextos (links). A marcação vem da sintaxe da 
+                linguagem, onde a estruturação é feita pelo uso de tags. 
+                <!-- Ela pode ser usada tanto dentro como fora de cabeçalhos -->
+            </h2>
+        <hr>
+        <h1>
+            Hierarquia de cabeçalhos
+        </h1>
+            <h2>
+                Os cabeçalhos são blocos de texto contidos entre tags do tipo &lt;hn&gt; onde n pode ser um número de 1
+                a 6. 
+                <br> Cada um desses cabeçalhos tem um tamanho de texto na vizualização do HTML, mas isso é só uma
+                questão de hierarquia, nada tem a ver com a formatação. Formatação do texto não se faz com HTML, mas com as
+                CSSs (páginas de estilo). Resumidamente, um cabeçalho &lt;h3&gt; seria um subtópico de um cabeçalho &lt;h2&gt;
+                por assim dizer. Vale lembrar que o HTML é quase um rascunho do que será o documento futuramente, ele não apresenta 
+                formatação ou estilo algum, apenas conteúdo, imagens, links, textos, o bruto da página.
+            </h2>
+        <hr>
+        <h1>
+            Algumas ferramentas e tags úteis
+        </h1>
+            <h2>
+                Inserindo caracteres especiais
+            </h2>
+                <h3>
+                    Caso você queira usar caracteres especiais nos cabeçalhos, pode fazer isso usando o "&amp;".
+                    <br>
+                    Por exemplo, se eu quiser que num cabeçalho o símbolo "&lt;" seja mostrado apenas como um texto, tal
+                    como está sendo agora, e não seja interpretado como uma abertura de tag, eu preciso escrever o e-comercial
+                    seguido pelo código do símbolo especial. Nesse caso o código completo é: "&amp;lt;" E fechar com ponto 
+                    e vírgula.
+                </h3>
+            <h2>
+                Quebra de linha
+            </h2>
+                <h3>
+                    A tag "&lt;br&gt;" poder ser usada para quebrar uma linha dentro de um cabeçalho. Algumas pessoas fazem essa
+                    quebra escrevendo parte do texto num cabeçalho separado, para emular o efeito, porém, isso não é boa 
+                    prática.
+                </h3>
+            <h2>
+                Comentários
+            </h2>
+                <h3>
+                    A tag "&lt;!--  --&gt;" pode ser usada para deixar comentários pelo HTML, inclusive espalhadas pelos 
+                    cabeçalhos. Assim como linguagens de programação, aqui comentários não se manifestam no produto final,
+                    no caso aqui, não aparecem na página.
+                </h3>
+            <h2>
+                Linhas horizontais
+            </h2>
+                <h3>
+                    Linhas horizontais podem ser inseridas com a tag "&lt;hr&gt;". Algumas dessas linhas já foram usadas nesta 
+                    página.
+                </h3>
+            <h2>
+                Hiperlinks 
+            </h2>
+                <h3>
+                    Posso deixar hiperlinks pelo documento com a tag "&lt;a&gt;". Essa tag pede a url, que leva à página destino, e 
+                    um texto que ficará visível ao usuário. Como exemplo deixo aqui o link da imagem anexada mais adiante na 
+                    página:
+                    <br>
+                    <a href= "https://search.creativecommons.org/photos/0e827488-d397-410a-94c5-e62af2272981"> 
+                        Siga aqui para a fonte da imagem
+                    </a>
+                </h3>
+            <h2>
+                Anexando imagens
+            </h2>
+                <h3>
+                    Com a tag "&lt;img&gt;" podemos linkar imagens à nossa página web. Essa tag requer uma endereço da imagem,
+                    ela não precisa estar necessariamente hospedada na mesma página que a página HTML, por isso o endereço pode ser
+                    tanto um diretório local, quanto a url de uma imagem hospedade em algum servidor à parte. A imagem abaixo está
+                    hospedada junto deste mesmo documento HTML, portanto usei um diretório local.
+                    <br>
+                    <img src="recursos/001.jpg" alt="Rocha com ilustrações antigas" width="1536" height="1188">
+                    <br>
+                    Não se assuste com o tamanho das imagens num HTML, lembre-se que documentos HTML não têm formatação, apenas
+                    conteúdo. As imagens vão ficar bem ajustadas com as CSSs. A imagem abaixo não está hospedada junto dos outros
+                    arquivos. Busquei num servidor diferente com uma url.
+                    <br>
+                    <img src="https://live.staticflickr.com/4785/40923794761_1290400a5a_k.jpg" alt="Uma bela foto de Recife" 
+                    width="2048" height="1448">
+                    <br>
+                    A tag "&lt;img&gt;" aceita diversos formatos de imagem, até mesmo gifs animados.
+                </h3>
+    </body>
+
+</html>
