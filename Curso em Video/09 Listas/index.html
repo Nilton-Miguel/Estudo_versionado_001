@@ -12,44 +12,85 @@
 <h2> Listas Ordenadas </h2>
 <p>
 Podemos criar listas ordenadas, <em>ordered lists</em>, com a tag "&lt;ol&gt;", e enumerar itens dessa lista
-com a tag "&lt;li&gt;", <em>list item</em>, o fechamento desta última tag é opcional no html5. 
-<br> <ol>
-
-<li> Acordar </li>
-<li> Comer desjejum </li>
-<li> Checar correio eletrônico </li>
-<li> Estudar programação </li>
-<li> Almoçar </li>
-<li> Trabalhar nas listas da Universidade </li>
-
+com a tag "&lt;li&gt;", <em>list item</em>, o fechamento desta última tag é opcional no html5. <br> 
+<ol>
+    <li> Acordar </li>
+    <li> Comer desjejum </li>
+    <li> Checar correio eletrônico </li>
+    <li> Estudar programação </li>
+    <li> Almoçar </li>
+    <li> Trabalhar nas listas da Universidade </li>
 </ol>
-<br> Algumas opções da tag são <em>type</em> e <em>start</em>. Segue abaixo a mesma lista com um tipo diferente.
-<br> <ol type="i">
-
-<li> Acordar </li>
-<li> Comer desjejum </li>
-<li> Checar correio eletrônico </li>
-<li> Estudar programação </li>
-<li> Almoçar </li>
-<li> Trabalhar nas listas da Universidade </li>
-
-    </ol>
+<br> Algumas opções da tag são <em>type</em> e <em>start</em>. Segue abaixo a mesma lista com um tipo diferente.<br> 
+<ol type="a">
+    <li> Acordar </li>
+    <li> Comer desjejum </li>
+    <li> Checar correio eletrônico </li>
+    <li> Estudar programação </li>
+    <li> Almoçar </li>
+    <li> Trabalhar nas listas da Universidade </li>
+</ol>
 
 </p>
 <h2> Listas não Ordenadas </h2>
 <p>
 Para listas que são apenas enumerativas, e não ordenadas, <em>unordered list</em>, usamos a tag "&lt;ul&gt;". Que também
-possui a opção <em>type</em>
-<br><ul type="disc">
-
+possui a opção <em>type</em><br>
+<ul type="disc">
     <li> Resistores </li>
     <li> Capacitores </li>
     <li> Transistores </li>
     <li> Circuitos Integrados </li>
     <li> Diodos emissores de luz </li>
-
 </ul>
 </p>
-
+<h2> Listas Combinadas </h2>
+<p>
+Nós podemos ter facilmente listas dentro de listas. <br>
+<ol>
+    <li> Aritmética </li>
+    <ul type="disc">
+        <li> Adição </li>
+        <li> Subtração </li>
+        <li> Multiplicação </li>
+        <li> Divisão </li>
+        <li> Igualdade </li>
+    </ul>
+    <li> Cálculo </li>
+    <ul type="disc">
+        <li> Limites </li>
+        <li> Diferenciação </li>
+        <li> Antidiferenciação </li>
+    </ul>
+    <li> Teoria dos conjuntos </li>
+    <ul type="disc">
+        <li> Contingência </li>
+        <li> União </li>
+        <li> Interceção </li>
+    </ul>
+    <li> Lógica formal </li>
+    <ul type="disc">
+        <li> Conjunção </li>
+        <li> Disjunção </li>
+        <li> Negação </li>
+    </ul>
+</ol>
+</p>
+<h2> Listas de Definição </h2>
+<p>
+Listas de definição são usadas para definir termos em glossários, dicionários, etc... Podem ser criadas com a tag 
+"&lt;dl&gt;", <em>definition list</em>. Os itens são criados com 2 pares de tags, as tags "&lt;dt&gt;", 
+<em>define term</em> e "&lt;dd&gt;", <em>define definition</em>. <br>
+<dl>
+    <dt> HTML </dt>
+    <dd>  
+        HTML é uma linguagem de marcação usada na criação do conteúdo de páginas Web.
+    </dd>
+    <dt> CSS </dt>
+    <dd>
+        CSS é a tecnologia usada para estilizar páginas Web, mudando por exemplo cores, fontes e tamanhos.
+    </dd>
+</dl>
+</p>
 </body>
 </html>
