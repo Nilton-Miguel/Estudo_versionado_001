@@ -11,16 +11,12 @@
 <h1>
     Formatações Adicionais
 </h1>
-<h2>
-    Código
-</h2>
+<h2> Código </h2>
 <p>
     Podemos dar sentido de código a algo (sempre pensar HTML5 semanticamente) usando a tag "&lt;code&gt;". Por exemplo:
     <br> <code>print("Hello World")</code>
 </p>
-<h2>
-    Código pré formatado
-</h2>
+<h2> Código pré formatado </h2>
 <p>
     A tag "&lt;code&gt;" só dá sentido de código, mas não retém nenhum tipo de formatação, o texto ainda é tratado como
     qualquer outro texto em html. Se quisermos manter no html a estrutura de qualquer texto, podemos usar a tag de pré
@@ -36,14 +32,38 @@
         </code>
     </pre>
 </p>
-<h2>
-    Abreviações
-</h2>
+<h2> Abreviações </h2>
 <p>
     Podemos indicar que algumas palavras são abreviações e deixar um pop up com a versão extendida da palavra usando
     a tag "&lt;abbr&gt;". Vou usar a palavra <abbr title="Wine is not emulator">Wine</abbr> de exemplo.
 </p>
+<h2> Citações frasais </h2>
+<p>
+    Podemos dar sentido de uma citação usando a tag "&lt;q&gt;" significando "quote".
+    <br> Roberto me disse ontem: <q> Não vá até lá </q>
+    <br> Pode até parecer em html que só tem aspas normais, mas isso tem qualidade semântica e não apenas formal
+<h2> Citações em bloco </h2>
+<p>
+    Quando não queremos fazer apenas pequenas citações, mas citar blocos de texto e até indicar para o navegador
+    de onde retiramos o trecho, usamos a tag "&lt;blockquote&gt;".
+    <br><blockquote cite="https://pt.wikipedia.org/wiki/Tim_Berners-Lee">
 
+        O primeiro site foi construído no CERN e foi posto on line em 6 de agosto de 1991. Info.cern.ch foi o endereço do 
+        primeiro web site e servidor web da história, rodando em um computador NeXT no CERN. O primeiro endereço de página 
+        web foi http://info.cern.ch/hypertext/WWW/TheProject.html, centrada em informações sobre o projeto WWW. Visitantes 
+        poderiam aprender mais sobre hipertexto, detalhes técnicos para a criação de sua própria página web e até mesmo 
+        uma explicação sobre como pesquisar a Web para obter informações. Não há imagens da tela desta página original e, 
+        em qualquer caso, alterações foram feitas diariamente com a informação disponível na página WWW quando o projeto 
+        desenvolveu-se. Pode-se encontrar uma cópia mais tardia (1992) no website do World Wide Web Consortium.
+
+    </blockquote>
+</p>
+<h2> Textos invertidos </h2>
+<p>
+    Textos podem ser invertidos com a tag "&lt;bdo&gt;". 
+    <br> <bdo dir="rtl">Texto para teste</bdo>
+    <br> O campo dir tem duas opções: ltr e rtl. Sentido normal e sentido inverso respectivamente.
+</p>
 
     </body>
 </html>
