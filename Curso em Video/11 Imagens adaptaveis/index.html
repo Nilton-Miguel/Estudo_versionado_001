@@ -7,13 +7,16 @@
     <title> Imagens Dinâmicas </title>
 </head>
 <body>
-  
+
+<!-- se eu tiver no máximo tal largura de tela, pega essa outra imagem que vai encaixar melhor -->
+
 <picture>
 <source media="(max-width: 525px)" srcset="recursos/imagem_pequena.png">
 <source media="(max-width: 1025px)" srcset="recursos/imagem_media.png">
 <img src="recursos/imagem_grande.png" alt="imagem padrão">
 </picture>
 
+<!-- se eu tiver no mínimo tal largura de tela, pega essa imagem maior aqui, que tem mais qualidade -->
 
 <picture>
 <source media="(min-width: 1025px)" srcset="recursos/imagem_grande.png">
