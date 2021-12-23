@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background-color: #1a1a1a;
+    font-family: monospace;
+}
+h1{
+    color: white;
+    text-align: justify;
+}
+h2{
+    color: white;
+    text-align: justify;
+}
+p{
+    color: white;
+    text-align: justify;
+}
+a{
+    background-color: white;
+}
