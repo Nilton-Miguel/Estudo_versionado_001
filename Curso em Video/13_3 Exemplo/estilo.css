@@ -7,6 +7,7 @@ body{
 main{
     background-color: #fcfcfc;
     border-radius: 8px;
+    box-shadow: 5px 5px 15px #0b0e0fa8;
     margin: auto;
     padding: 20px;
     text-align: justify;
@@ -17,5 +18,5 @@ h1{
     text-align: center;
 }
 h2{
-    color: #F2CB57;
+    color: #8D9CA6;
 }
