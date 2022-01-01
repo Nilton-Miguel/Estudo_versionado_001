@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+/*
+Posso incorporar, "embedar" fontes de sites próprios desse tipo de serviço, com as variações disponíveis desejadas. Nesse exemplo importei a Montserrat e o google fonts preparou o link no modelo: {itálico, peso} então 0,200 significa sem itálico, extra fina, enquanto 1,700 significa itálico, negrito.
+*/
+
+body{
+    background-color: #020614;
+    font-family: 'Montserrat Alternates', sans-serif;;
+    font-size: 1.3em;
+    font-weight: 200;
+}
+/*
+Algumas fontes tem suporte a múltiplas variações, nem todas têm, precisamos pesquisar as qualidade da fonte antes de usar ou configurar.
+
+font-decoration
+font-style
+font-weight
+
+Podemos simplificar a configuração de algumas coisas, fontes inclusas, em CSS usando shorthands, atalhos com ordem pré formatada de qualidades para configurarmos nossa fonte. Algumas estruturas mais usuais possuem shorthands disponíveis.
+*/
+main{
+    background-color: #f3e9e9;
+    border-radius: 15px;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+    width: 980px;
+}
+h1{
+    color: #0b1653;
+    font-family: 'Vidaloka', serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+h2{
+    color: #0b1653;
+    font-family: 'Vidaloka', serif;
+    font-size: 1.75em;
+}
+/*
+Safe combinations: dar múltiplas opções de fonte para que o navegador escolha em caso de indisponibilidade. Da mais desejada à menos, e finalizando com uma categoria genérica. Isso aumenta em muito a compatibilidade do site.
+
+Quanto a tamanhos, a recomendação oficial da W3C é usar px para medidas absolutas e em para medidas relativas.
+*/
