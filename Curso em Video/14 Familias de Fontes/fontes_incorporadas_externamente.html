@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fontes incorporadas externamente </title>
+    <link rel="stylesheet" href="novos_estilos.css">
+    <link rel="shortcut icon" href="./../../Arquivos comuns/icone_favoritos.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <h1> Obtendo fontes de múltiplas formas </h1>
+
+        <h2> Fontes "garantidas" </h2>
+
+        <P>
+            São aquelas tão padrão em todas as máquinas que são tomadas por garantidas quanto à compatibilidade em qualquer navegador, são exemplos: Arial, Times New Roman, Courier New etc...
+
+        </P>
+
+        <p>
+            Os parágrafos deste documento usam uma combinação segura de fontes desse tipo: <em>Arial, Helvetica, sans-serif</em>. Abaixo temos um exemplo formatado com outra combinação segura de fontes desse tipo: <em>'Courier New', Courier, monospace</em>:
+        </P>
+
+        <p id="fonte_garantida">
+            <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Repellat, aut? Beatae architecto ea explicabo! Nisi quis quae deserunt cupiditate inventore. <strong>Consequatur fugiat odio</strong>, laudantium similique saepe illum possimus assumenda ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, optio deleniti repellat accusantium, quidem itaque magni animi cumque illo, aperiam qui? Dolorum, minima? Maiores distinctio sed fugiat quo aperiam deserunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <em>Laborum blanditiis nobis</em> illo ea atque unde, <em>reprehenderit adipisci iusto excepturi</em> illum saepe quis odio quas repudiandae? Reiciendis distinctio aperiam consequatur in? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut sapiente libero ducimus. <strong>Iusto quos ipsam architecto</strong> cum, veritatis ratione cupiditate itaque sed, natus repellendus suscipit ex corrupti beatae unde! Quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, iste. Magnam officiis id repellat nostrum adipisci quo repellendus rerum, dolores exercitationem nihil eaque voluptas ut <em>fugiat velit molestias!</em> Hic, itaque?
+        </p>
+
+        <h2> Fontes incorporadas gratuitamente de sites adequados </h2>
+
+        <p>
+            Essas são fontes disponíveis em sites como <em>Google Fonts</em> e alternativos. Esses sites providenciam opções nativas para incorporar a fonte ao site usando uma simples regra no CSS da página. Da mesma forma que podemos embarcar/ incorporar vídeos do youtube, imagens e coisas assim.
+        </p>
+
+        <p id="fonte_incorporada_de_site_adequado">
+            <strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Placeat esse fugiat quam aliquam eius eaque recusandae labore iusto doloremque rerum consectetur facilis libero nobis voluptatum in ex, dolores laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque doloremque fuga corrupti minus quia dolor odio ratione iste eius. <em>A doloremque voluptatem repudiandae</em> ratione itaque beatae, officiis expedita quas aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit deleniti odit debitis, quidem totam nulla minus inventore dolorum aut asperiores minima <strong>repellendus harum nesciunt quia!</strong> Error nam suscipit repudiandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsa vel perferendis vero quaerat recusandae <em>sapiente modi explicabo, facilis</em> esse, dolorum possimus expedita tenetur illo ab. Laborum odit sequi ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laboriosam odio quas quod dignissimos qui facere neque distinctio nulla delectus fugit. Aliquam vel provident ex, enim quas delectus deserunt culpa!
+        </p>
+
+        <h2> Fontes externas incorporadas </h2>
+
+        <p>
+            São fontes que você possui localmente, ou num servidor próprio, fontes customizadas, inéditas ou baixadas localmente, quando não se tem a opção de embarcar, você pode colocar os arquivos localmente e criar uma regra font-face em CSS para fazer uso dela.
+        </p>
+
+        <p id="fonte_incorporada_de_arquivo_local">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta blanditiis adipisci quisquam laboriosam amet totam porro minus nam asperiores, ipsum dignissimos vel, explicabo fuga ab tempore velit magnam fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. <em id="enfase_teste_fonte_externa">Beatae, ipsum quidem sapiente dolor, minima, in voluptatum itaque deserunt odio ad porro alias dolorum tempora velit repudiandae a!</em> Corporis, nemo dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sequi aliquid animi recusandae nemo nihil molestiae quidem dolorum ullam, doloribus maiores voluptatibus quam tempore, nam cumque, deleniti consequatur expedita minima. <em id="enfase_teste_fonte_externa">Lorem ipsum dolor sit amet consectetur adipisicing elit.</em> Nam molestiae doloremque fuga id dolorum repudiandae voluptates illo reprehenderit, sit distinctio nobis fugiat delectus ex nemo nostrum a corporis voluptatem obcaecati?
+        </p>
+
+        <p>
+            Algo importante a se notar é: Algumas fontes que não têm suporte nativo a itálico, ainda vão aparecer em itálico quando usamos a tag &lt;em&gt; Isso porque alguns navegadores vão usar truques de renderização para simular esses efeitos de itálico e negrito, como alargar as fontes, distorcê-las, etc... Mas isso não vem na própria fonte. Isso é importante quando embarcamos uma dessas fontes externas, já que as diferentes combinações de peso e estilo vêm em arquivos separados. Para aplicar esses efeitos precisamos criar seletores CSS com declarações específicas para esses efeitos na nossa fonte, usando font-faces separadas.
+        </p>
+        <h2 id="ultimo_titulo">título de teste de outra fonte externa</h2>
+
+    </main>
+</body>
+</html>

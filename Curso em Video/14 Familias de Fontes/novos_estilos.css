@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+@font-face {
+    font-family: "Golden Bless";
+    src: url(fonts/GoldenBless-8Mq30.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Golden Bless Italic";
+    src: url(fonts/GoldenBlessItalic-YzBoo.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Waltograph";
+    src: url(fonts/waltograph42.otf) format("opentype"), url(fonts/waltograph42.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #3F3047;
+}
+#enfase_teste_fonte_externa{
+    font-family: 'Golden Bless Italic';
+}
+#fonte_garantida{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    text-align: justify;
+}
+#fonte_incorporada_de_arquivo_local{
+    font-family: 'Golden Bless';
+    font-size: 1.2em;
+}
+#fonte_incorporada_de_site_adequado{
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: justify;
+}
+main{
+    background-color: #effffc;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #1223277e;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+    width: 950px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+}
+h1{
+    color: #2c6358;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3em;
+}
+h2{
+    color: #2c6358;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 2em;
+}
+#ultimo_titulo{
+    font-family: 'Waltograph';
+    font-size: 3em;
+}
