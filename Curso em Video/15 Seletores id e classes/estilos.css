@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    background-color: #f0f0f0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.05em;
+}
+.subtitulo_da_tabela_de_conteudos{
+    text-indent: 1em;
+}
+.titulos_mais_importantes{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="pagina_teste">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prioridade.css">
+</head>
+<body>
+
+    <!--
+        Diferentes formas de estilizar trazem diferentes pesos à cascata. Da mais genérica para a mais específica. <body> nesse primeiro exemplo é a mais genérica, mas já é sobrescrita pelo <h1> e o título é renderizado verde.
+    -->
+
+    <h1> Parágrafo de teste </h1>
+
+    <!--
+        Nesse caso a classe azul é mais específica que o <h1> genérico, então a classe sobrescreve e o texto sai renderizado azul.
+    -->
+
+    <h1 class="azul"> Parágrafo de teste </h1>
+
+    <!--
+        Nesse caso temos duas classes com o mesmo peso, e ambas têm uma propriedade comum, então existe um choque de propriedades aí. Como rola o desempate ? O desempate rola pela ordem com que as classes são declaradas no CSS. As declarações que aparecem por último sobrescrevem as que vieram primeiro.
+    -->
+
+    <h1 class="azul laranja"> Parágrafo de teste </h1>
+
+    <!--
+        Não importa a ordem das classes no elemento, tudo que importa é a ordem das declarações no CSS.
+    -->
+
+    <h1 class="laranja azul"> Parágrafo de teste </h1>
+
+    <!--
+        Aqui o id sobrescreve o <h1>.
+    -->
+
+    <h1 id="teste_do_id"> Parágrafo de teste </h1>
+
+    <!--
+        Aqui o id sobrescreve qualquer classe. O id tem a maior prioridade nas cascatas.
+    -->
+
+    <h1 class="laranja azul" id="teste_do_id"> Parágrafo de teste </h1>
+
+
+</body>
+</html>

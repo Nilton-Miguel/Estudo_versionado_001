@@ -9,10 +9,10 @@
     font-style: normal;
 }
 @font-face {
-    font-family: "Golden Bless Italic";
+    font-family: "Golden Bless";
     src: url(fonts/GoldenBlessItalic-YzBoo.otf) format("opentype");
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 @font-face {
     font-family: "Waltograph";
@@ -20,11 +20,17 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "Waltograph";
+    src: url(fonts/waltographUI.ttf) format("opentype"), url(fonts/waltograph42.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+#ajuste_de_tamanho{
+    font-size: 0.6em;
+}
 body{
     background-color: #3F3047;
-}
-#enfase_teste_fonte_externa{
-    font-family: 'Golden Bless Italic';
 }
 #fonte_garantida{
     font-family: 'Courier New', Courier, monospace;
@@ -70,4 +76,5 @@ h2{
 #ultimo_titulo{
     font-family: 'Waltograph';
     font-size: 3em;
+    font-weight: normal;
 }
