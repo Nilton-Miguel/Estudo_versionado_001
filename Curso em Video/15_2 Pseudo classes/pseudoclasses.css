@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+html{
+    background-color: black;
+}
+
+/* identificadores */
+
+#paragrafo_de_teste{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+/* pseudoclasses */
+
+#paragrafo_de_teste:hover{
+    color: blue;
+}

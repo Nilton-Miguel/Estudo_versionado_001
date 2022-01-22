@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudoelementos </title>
+    <style>
+        h1{
+            /*
+            nota: em é relativo ao tamanho atual da fonte, nesse caso aqui: p seta o tamanho pra 3em, num momento em que o tamanho era o padrão de 16px, em p::after, se eu setasse 1em, ela manteria em 48px por ser o mesmo tamanho que já estava. Pra esse caso porém eu precisava de valores absolutos.
+            */
+            text-align: center;
+            font-size: 3em;
+            font-family: serif;
+        }
+        h1::after{
+            /*
+            pseudoelementos são conteúdos anexos via css. Não têm sentido semântico, é mais uma questão de formatação e por isso não é conveninente estar no html.
+            */
+            content: ' (hi)';
+            font-size: 24px;
+            color: royalblue;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1> Título de teste </h1>
+
+</body>
+</html>
