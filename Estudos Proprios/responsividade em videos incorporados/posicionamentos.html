@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Posicionamento </title>
+    <link rel="shortcut icon" href="../../Arquivos comuns/icone_favoritos.ico" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a#ancora_deslocada_relativamente{
+            position: relative;
+            top: 80px;
+            left: 80px;
+        }
+        a#ancora_posicionada_estaticamente{
+            position: static;
+        }
+        a#ancora_posicionada_absolutamente{
+            position: absolute;
+            top: 10px;
+            left: 500px;
+        }
+        body{
+            background-color: #21242b;
+            font-size: 1.3em;
+        }
+        div#div_deslocada_relativamente{
+            background-color: lightslategray;
+            border-radius: 10px;
+            height: 300px;
+            margin: 0px auto;
+            max-width: 300px;
+            min-width: 200px;
+
+            position: relative;
+            top: -100px;
+            left: -100px;
+            z-index: 0;
+        }
+        div#div_posicionada_estaticamente{
+            background-color: lightslategray;
+            border-radius: 10px;
+            height: 300px;
+            margin: 0px auto;
+            max-width: 300px;
+            min-width: 200px;
+
+            position: static;
+        }
+        div#div_posicionada_absolutamente{
+            background-color: lightslategray;
+            border-radius: 10px;
+            height: 300px;
+            margin: 0px auto;
+            width: 300px;
+
+            position: absolute;
+            top: 100px;
+            left: 350px;
+            z-index: -1;
+        }
+        div#fundo{
+            background-color: #588f8f;
+            height: 95%;
+            width: 95%;
+            z-index: -3;
+
+            position: fixed;
+            top: 5%;
+            left: 2%;
+        }
+        h1{
+            color: #013441;
+            font-size: 2em;
+        }
+        section{
+            background-color: #d3e7e9;
+            border-radius: 10px;
+            min-width: 250px;
+            margin: 10px auto;
+            max-width: 800px;
+            padding: 20px;
+            text-align: justify;
+        }
+        section p#paragrafo_relativo{
+            position: relative;
+            z-index: 1;
+        }
+        section#section_posicionamento_absoluto{
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="fundo">
+    </div>
+
+    <section>
+        <h1> Posicionamento Estático </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia aliquid odit ipsum, tempora voluptatum laboriosam. Veritatis ad non magnam aut ut quia, facere assumenda reprehenderit in ratione necessitatibus inventore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi dolorem quibusdam ipsum autem. Numquam iure nam soluta at cumque vitae velit doloremque doloribus atque? Id veniam soluta quia inventore blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio, cupiditate consequuntur doloremque tempore ut commodi ratione harum deleniti unde praesentium at, quidem quos suscipit mollitia maxime voluptatibus optio enim. <a href="#" id="ancora_posicionada_estaticamente"> Link teste </a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cupiditate voluptate voluptatum necessitatibus provident iste sit repellat dolores dicta tempora unde error asperiores labore hic, repudiandae similique, illo velit fuga.
+        </p>
+        <div id="div_posicionada_estaticamente">
+        </div>
+    </section>
+
+    <section>
+        <h1> Posicionamento Relativo </h1>
+        <p id="paragrafo_relativo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia aliquid odit ipsum, tempora voluptatum laboriosam. Veritatis ad non magnam aut ut quia, facere assumenda reprehenderit in ratione necessitatibus inventore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi dolorem quibusdam ipsum autem. Numquam iure nam soluta at cumque vitae velit doloremque doloribus atque? Id veniam soluta quia inventore blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio, cupiditate consequuntur doloremque tempore ut commodi ratione harum deleniti unde praesentium at, quidem quos suscipit mollitia maxime voluptatibus optio enim. <a href="#" id="ancora_deslocada_relativamente"> Link teste </a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cupiditate voluptate voluptatum necessitatibus provident iste sit repellat dolores dicta tempora unde error asperiores labore hic, repudiandae similique, illo velit fuga.
+        </p>
+        <div id="div_deslocada_relativamente">
+        </div>
+    </section>
+
+    <section id="section_posicionamento_absoluto">
+        <h1> Posicionamento Absoluto </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia aliquid odit ipsum, tempora voluptatum laboriosam. Veritatis ad non magnam aut ut quia, facere assumenda reprehenderit in ratione necessitatibus inventore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi dolorem quibusdam ipsum autem. Numquam iure nam soluta at cumque vitae velit doloremque doloribus atque? Id veniam soluta quia inventore blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio, cupiditate consequuntur doloremque tempore ut commodi ratione harum deleniti unde praesentium at, quidem quos suscipit mollitia maxime voluptatibus optio enim. <a href="#" id="ancora_posicionada_absolutamente"> Link teste </a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cupiditate voluptate voluptatum necessitatibus provident iste sit repellat dolores dicta tempora unde error asperiores labore hic, repudiandae similique, illo velit fuga.
+        </p>
+        <div id="div_posicionada_absolutamente">
+        </div>
+    </section>
+</body>
+</html>
