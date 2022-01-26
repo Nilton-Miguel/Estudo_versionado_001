@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsividade em Vídeos integrados </title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*
+        Você cria um container que sempre mantém um aspect ratio de acordo com o vídeo que ele vai conter. As dimensões desse container são porcentagens do que está acima na hierarquia, o que permite o vídeo ser responsivo.
+        */
+        div.container_videos_incorporados{
+            background-color: blueviolet;
+            height: 0;
+            padding-top: 56.25%;
+            position: relative;
+            width: 100%;
+        }
+        /*
+        Uma div que eu gosto de ter ao redor para dar um espaçamento legal ao redor
+        */
+        div.container_videos_incorporados iframe{
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        div.space{
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        main{
+            min-width: 200px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <div class="space">
+            <div class="container_videos_incorporados">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
