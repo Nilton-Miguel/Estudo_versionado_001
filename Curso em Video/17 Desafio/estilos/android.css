@@ -23,7 +23,6 @@
     --font_destaque: 'Bebas Neue', cursive;
     --font_android: 'Idroid', cursive;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -39,9 +38,6 @@ div#container_para_padding_main{
     padding: 0px 8px;
     word-wrap: break-word;
 }
-/* 
-Não faço ideia do que esses seletores pra div do vídeo estão fazendo, eu apenas peguei pronto, infelizmente. Preciso estudar para aprender a tornar vídeos responsivos.
-*/
 div.video_container{
     position: relative;
     width: 100%;
